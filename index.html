@@ -3,47 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>First API</title>
+    
 </head>
 <body>
-    
-<script>
-    const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '901cadb15amsha989afa1fbd9f28p1dffb7jsn1f544feb87f2',
-		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
-	}
-};
 
-fetch('https://weatherapi-com.p.rapidapi.com/current.json?q=campinas', options)
-	.then((response) => response.json())
-  .then((data) => {
-      console.log(data)
-  
-	//.then(response => console.log(response))
-	//.catch(err => console.error(err));
-
-           //alert(data.subject_times);
-
-    //const loc = document.getElementById('local');
-
-    let test = data.location.name;
-    let temp = data.current.temp_c;
-    document.getElementById('test').innerHTML = test;
-    document.getElementById('temp').innerHTML = temp;
-
-  
-        
-  });
-</script>
+<script src="../javascript/scripts.js"></script>
 
 <h1 id="test"></h1>
 <h3>Temperatura atual: <span id="temp"></span></h3>
 
-<!--<input type="text" id="local"> -->
-
+<form action="">
+  <input type="text" id="local" placeholder="Informe o local.">
+  <input type="submit" id="send" value="Enviar">
+</form>
 
 </body>
 </html>

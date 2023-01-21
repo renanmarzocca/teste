@@ -30,21 +30,21 @@ const hora = String(date.getHours()) // SOMENTE HORA
 console.log(hora)
 
 
-let bdia = 'Bom dia';
-let btarde = 'Boa tarde';
-let bnoite = 'Boa noite';
+let bdia = 'Bom dia viajante!';
+let btarde = 'Boa tarde viajante!';
+let bnoite = 'Boa noite viajante!';
 
-if (hora >= 0 && hora <= 12)
+if (hora >= 0 && hora < 12)
 {
   document.getElementById('msg').innerHTML = bdia;
 }
 
-else if (hora > 12 && hora <= 18)
+else if (hora >= 12 && hora < 18)
 {
   document.getElementById('msg').innerHTML = btarde;
 }
 
-else (hora > 18 && hora <= 23)
+else if (hora >= 18 && hora <= 23)
 {
   document.getElementById('msg').innerHTML = bnoite;
 }

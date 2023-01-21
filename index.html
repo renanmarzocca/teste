@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First API</title>
-    
+    <title>Weather Flex</title>
+    <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
 
-<script src="../javascript/scripts.js"></script>
+  <section id="search">
+    <div class="container">
+      <h2 id="msg"></h2>
+      <form action="" class="search-box">
+        <input type="text" id="local" placeholder="Não sabe como está o tempo hoje?">
+        <button type="submit" id="send" value="Enviar"><img src="images/search.png"></button>
 
-<h1 id="test"></h1>
-<h3>Temperatura atual: <span id="temp"></span></h3>
+        <div class="slider">
+          <div><img src="images/arco.png"></div>
+          <div><img src="images/guarda.png"></div>
+          <div><img src="images/montanha.png"></div>
+          <div><img src="images/sol.png"></div>
+        </div>
 
-<form action="">
-  <input type="text" id="local" placeholder="Informe o local.">
-  <input type="submit" id="send" value="Enviar">
-</form>
+      </form>
 
+      <h3 id="nome"></h3>
+      <h4>Temperatura atual: <span id="temp"></span></h4>
+
+    </div>
+  </section>
+
+<!--CHAMADA PARA SCRIPT-->
+<script src="scripts.js" defer></script>
 </body>
 </html>

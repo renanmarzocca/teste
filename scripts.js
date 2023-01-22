@@ -78,10 +78,14 @@ btn.addEventListener("click", function(e){
   .then((data) => {
       console.log(data)
 
-    let nome = value;
+    let icone = data.current.condition.text;
+    let diaatual = (diasemana[dianome]);
     let temp = data.current.temp_c;
-    document.getElementById('nome').innerHTML = nome;
-    document.getElementById('temp').innerHTML = temp;
+    /*document.getElementById('nome').innerHTML = nome;*/
+    /*let nome = value;*/
+    console.log(icone)
+    document.getElementById('diawrite').innerHTML = diaatual; // PEGA O NOME DO DIA ATUAL
+    document.getElementById('temp').innerHTML = temp; // PEGA TEMPERATURA ATUAL E ENVIA PRO HTML
         
   });
 
@@ -101,3 +105,6 @@ fetch('https://weatherapi-com.p.rapidapi.com/forecast.json?q=campinas&days=3&lan
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+
+
+// CHAMADA JSON PEGA IMAGEM

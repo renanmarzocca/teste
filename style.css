@@ -18,7 +18,7 @@
     background-image: linear-gradient(55deg, #0070cc, #000);
     background-size: cover;
     background-position: center;
-    padding: 100px 8%;
+    padding: 30px 8%;
     /*display: flex;
     align-items: center;
     justify-content: center;*/
@@ -41,7 +41,6 @@
 .content h3
 {
     color: #fff;
-    padding-bottom: 2%;
 }
 
 .search-box
@@ -54,7 +53,7 @@
     align-items: center;
     border-radius: 10px;
     height: 85px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 
@@ -119,7 +118,7 @@
 section
 {
     padding: 13px 0;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 .card
@@ -127,13 +126,14 @@ section
     position: relative;
     max-width: 300px;
     height: auto;
-    background: linear-gradient(-45deg, #fe0847, #feae3f);
     border-radius: 15px;
     margin: 0 auto;
     padding: 40px 20px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, .0);
     transition: .5s;
     overflow: hidden;
+    /*background-image: url(images/sunset.jpg);
+    background-size: 350px;*/
 }
 
 .card:hover
@@ -144,22 +144,23 @@ section
 .col-sm-3:nth-child(1) .card,
 .col-sm-3:nth-child(1) .card .tittle .fa
 {
-    background: linear-gradient(-45deg, #f403d1, #64b5f6);
+    background: linear-gradient(-45deg, #000000, #64b5f6);
+    /*background-image: url(images/sunset.jpg)*/
 }
 .col-sm-3:nth-child(2) .card,
 .col-sm-3:nth-child(2) .card .tittle .fa
 {
-    background: linear-gradient(-45deg, #ffec61, #f321d7);
+    background: linear-gradient(-45deg, #000000, #f321d7);
 }
 .col-sm-3:nth-child(3) .card,
 .col-sm-3:nth-child(3) .card .tittle .fa
 {
-    background: linear-gradient(-45deg, #24ff72, #9a4eff);
+    background: linear-gradient(-45deg, #000000, #9a4eff);
 }
 .col-sm-3:nth-child(4) .card,
 .col-sm-3:nth-child(4) .card .tittle .fa
 {
-    background: linear-gradient(-45deg, #deff24, #ff4e4e);
+    background: linear-gradient(-45deg, #000000, #ff4e4e);
 }
 
 .card:before
@@ -172,7 +173,7 @@ section
     height: 46%;
     background: rgba(255, 255, 255,.1);
     z-index: 1;
-    transform: skewY(-6deg) scale(1,1);
+    transform: skewY(-6deg) scale(1,2);
 }
 
 .tittle .fa

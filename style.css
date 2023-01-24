@@ -16,7 +16,8 @@
     width: 100%;
     height: 100vh;
     /*background-image: linear-gradient(55deg, #0070cc, #000);*/
-    background-image: url(images/b.jpg);
+    background-image: url(images/Desktop.jpg);
+    /*background: #fff;*/
     background-size: cover;
     background-position: center;
     padding: 260px 6%;
@@ -132,15 +133,20 @@ section
 {
     position: relative;
     max-width: 300px;
-    height: auto;
-    border-radius: 15px;
+    height: auto !important;
+    border-radius: 35px !important;
+    border: none !important;
     margin: 0 auto;
     padding: 40px 20px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, .0);
+    box-shadow: 0 10px 15px;
     transition: .5s;
     overflow: hidden;
+    
+    
+    
     /*background-image: url(images/sunset.jpg);
-    background-size: 350px;*/
+    background-size: cover;
+    background-position: center;*/
 }
 
 .card:hover
@@ -177,10 +183,16 @@ section
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 46%;
+    height: 44%;
     background: rgba(255, 255, 255,.1);
     z-index: 1;
     transform: skewY(-6deg) scale(1,2);
+}
+
+.tittle img
+{
+    width: 80px;
+    height: 80px;
 }
 
 .tittle .fa
@@ -201,7 +213,17 @@ section
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
+    text-transform: capitalize;
+    z-index: 2;
+}
+
+.tittle h3
+{
+    position: relative;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
     z-index: 2;
 }
 
@@ -213,10 +235,9 @@ section
 
 .weather h4
 {
-    margin: 0;
-    padding: 10px 0;
     color: #fff;
-    font-size: 30px;
+    font-size: 80px;
+    margin-bottom: -25%;
 }
 
 .phrase
@@ -225,44 +246,29 @@ section
     z-index: 2;
 }
 
-.phrase ul
+.phrase h4
 {
-    margin: 0;
-    padding: 0;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 120px;
+    
 }
 
-.phrase ul li
+.phrase h4 i
+{
+    color: #fff;
+    font-size: 12px;
+}
+
+/*.phrase ul li
 {
     margin: 0 0 6px;
     padding: 0;
     list-style: none;
     color: #fff;
     font-size: 14px;
-}
-
-.card a
-{
-    position: relative;
-    z-index: 2;
-    background: #fff;
-    color: #262622;
-    width: 150px;
-    height: 20px;
-    line-height: 20px;
-    border-radius: 20px;
-    display: block;
-    text-align: center;
-    margin: 10px auto 0;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-    
-}
-
-.card a:hover
-{
-    text-decoration: none;
-}
+}*/
 
 
 

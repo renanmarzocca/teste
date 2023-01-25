@@ -222,8 +222,7 @@ btn.addEventListener("click", function(e){
     console.log(icone2)
 
     let sol = 'Sunny'
-    let sunny = '<img src="icones/solatt.png">'
-    /*let sunny = '<i class="fa fa-sun"></i>'*/
+    let sunny = '<i class="fa fa-sun"></i>'
     let parcnublado = 'Partly cloudy'
     let partlycloudy = '<i class="fa fa-cloud-sun"></i>'
     let neve = 'Patchy light snow'

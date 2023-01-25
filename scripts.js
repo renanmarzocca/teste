@@ -21,9 +21,9 @@ diasemana[6]='Sabado';
 
 const hora = String(date.getHours()) // SOMENTE HORA
 
-let bdia = 'Bom dia viajante!';
-let btarde = 'Boa tarde viajante!';
-let bnoite = 'Boa noite viajante!';
+let bdia = 'Bom dia!';
+let btarde = 'Boa tarde!';
+let bnoite = 'Boa noite!';
 
 if (hora >= 0 && hora < 12)
 {

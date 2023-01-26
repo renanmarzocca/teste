@@ -13,7 +13,7 @@
 
 body
 {
-    animation: bgcolor infinite 25s;
+    animation: bgcolor infinite 30s;
 }
 
 .container-search
@@ -28,7 +28,7 @@ body
 
 @keyframes bgcolor
 {
-    0%
+    0%, 100%
     {
         background: url(images/morning.jpg);
         background-size: cover;
@@ -42,19 +42,13 @@ body
     }
     50%
     {
-        background-color: url(images/sunset.jpg);
+        background: url(images/sunset.jpg);
         background-size: cover;
         background-position: center;
     }
     75%
     {
         background: url(images/night.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    100%
-    {
-        background: url(images/morning.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -166,6 +160,11 @@ section
     padding-top: 30px;
 }
 
+.container-fluid
+{
+    display: none;
+}
+
 .card
 {
     position: relative;
@@ -180,70 +179,58 @@ section
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     transition: .5s;
     overflow: hidden;
+    /*opacity: 0;
+    animation: ani2 10s ease-out forwards;*/
     
-    
-    
-    /*background-image: url(images/sunset.jpg);
-    background-size: cover;
-    background-position: center;*/
 }
-
-/*.card:hover
-{
-    transform: scale(1.1);
-}*/
 
 .col-sm-3:nth-child(1) .card,
 .col-sm-3:nth-child(1) .card .tittle .fa
 {
-    /*background: linear-gradient(-45deg, #000000, #64b5f6);*/
     background: rgba(255, 255, 255, 0.3);
 
 }
 .col-sm-3:nth-child(2) .card,
 .col-sm-3:nth-child(2) .card .tittle .fa
 {
-    /*background: linear-gradient(-45deg, #000000, #64b5f6);*/
     background: rgba(255, 255, 255, 0.3);
     
 }
 .col-sm-3:nth-child(3) .card,
 .col-sm-3:nth-child(3) .card .tittle .fa
 {
-    /*background: linear-gradient(-45deg, #000000, #64b5f6);*/
     background: rgba(255, 255, 255, 0.3);
    
 }
 .col-sm-3:nth-child(4) .card,
 .col-sm-3:nth-child(4) .card .tittle .fa
 {
-   /*background: linear-gradient(-45deg, #000000, #64b5f6);*/
    background: rgba(255, 255, 255, 0.3);
    
 }
 
-/*.card:before
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 44%;
-    background: rgba(255, 255, 255,.1);
-    z-index: 1;
-    transform: skewY(-6deg) scale(1,2);
-}*/
+/* MANTER OS ELEMENTOS DO CARD COM OP 0 */
 
-.tittle img
+.tittle .fa,
+.tittle h2,
+.tittle h3,
+.weather h4,  
+.phrase h4,
+.phrase h4 i
+{
+    opacity: 0;
+}
+
+/*.tittle img
 {
     width: 80px;
     height: 80px;
-}
+    animation: ani2 0.75s ease-out 4s forwards;
+}*/
 
 .tittle .fa
 {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     width: 60px;
     height: 60px;
@@ -251,6 +238,7 @@ section
     text-align: center;
     line-height: 60px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    animation: ani2 5s ease-out forwards;
 }
 
 .tittle h2
@@ -262,6 +250,7 @@ section
     font-size: 30px;
     text-transform: capitalize;
     z-index: 2;
+    animation: ani2 5s ease-out forwards;
 }
 
 .tittle h3
@@ -271,6 +260,7 @@ section
     color: #fff;
     font-size: 16px;
     z-index: 2;
+    animation: ani2 5s ease-out forwards;
 }
 
 .weather
@@ -284,6 +274,7 @@ section
     color: #fff;
     font-size: 80px;
     margin-bottom: -25%;
+    animation: ani2 5s ease-out forwards;
 }
 
 .phrase
@@ -298,6 +289,8 @@ section
     color: #fff;
     font-size: 20px;
     margin-left: 120px;
+    animation: ani2 5s ease-out forwards;
+    
     
 }
 
@@ -305,17 +298,15 @@ section
 {
     color: #fff;
     font-size: 12px;
+    animation: ani2 5s ease-out forwards;
 }
 
-/*.phrase ul li
+@keyframes ani2
 {
-    margin: 0 0 6px;
-    padding: 0;
-    list-style: none;
-    color: #fff;
-    font-size: 14px;
-}*/
-
-
+    100%
+    {
+        opacity: 1;
+    }
+}
 
 

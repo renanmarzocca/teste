@@ -9,13 +9,14 @@ const dia = String(date.getDate()).padStart(2, '0') // 1 -> 01
 const dianome = String(date.getDay()); // DIA EM NUMERO DA SEMANA
 
 const diasemana = new Array(6); // ARRAY PARA ENCONTRAR O NOME DO DIA DA SEMANA
-diasemana[0]='Domingo';
+
 diasemana[1]='Segunda-Feira';
 diasemana[2]='Terça-Feira';
 diasemana[3]='Quarta-Feira';
 diasemana[4]='Quinta-Feira';
 diasemana[5]='Sexta-Feira';
 diasemana[6]='Sabado';
+diasemana[7]='Domingo';
 
 // VERIFICA A HORA E RETORNA SAUDAÇÕES
 
@@ -83,7 +84,7 @@ btn.addEventListener("click", function(e){
     //VERIFICA COMO ESTA O CLIMA E RETORNA O ICONE CORRETO
 
     let sol = 'Sunny'
-    let sunny = '<img src="icones/solatt.png">'
+    let sunny = '<i class="fa fa-sun"></i>'
     let parcnublado = 'Partly cloudy'
     let partlycloudy = '<i class="fa fa-cloud-sun"></i>'
     let neve = 'Patchy light snow'
@@ -208,6 +209,7 @@ btn.addEventListener("click", function(e){
       diaforecast = diaforecast + 1
       diaforecastnome = (diasemana[diaforecast]);
       document.getElementById('diawrite4').innerHTML = diaforecastnome;
+      console.log(diasemana[diaforecast]);
 
     // VERIFICA COMO ESTA O CLIMA FORECAST E RETORNA O ICONE CORRETO
     let iconeforecast = data.forecast.forecastday
@@ -366,6 +368,10 @@ btn.addEventListener("click", function(e){
         }
 
   });
+
+    // APARECE CARD
+
+    document.getElementById("id").style.display = "initial";
 
 
 });

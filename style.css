@@ -33,24 +33,34 @@ body
         background: url(images/morning.jpg);
         background-size: cover;
         background-position: center;
+        min-width: auto;
+        min-height: auto;
     }
     25%
     {
         background: url(images/daytime.jpg);
         background-size: cover;
         background-position: center;
+        min-width: auto;
+        min-height: auto;
     }
     50%
     {
         background: url(images/sunset.jpg);
         background-size: cover;
         background-position: center;
+        min-width: auto;
+        min-height: auto;
+        
     }
     75%
     {
         background: url(images/night.jpg);
         background-size: cover;
         background-position: center;
+        min-width: auto;
+        min-height: auto;
+        
     }
 
 }
@@ -84,7 +94,7 @@ body
     display: flex;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 10px 15px;
+    box-shadow: 0 3px 3px;
     height: 85px;
     position:relative;
     overflow: hidden;
@@ -163,11 +173,12 @@ section
 .container-fluid
 {
     display: none;
+    animation: ani2 5s ease-out forwards;
 }
 
 .card
 {
-    position: relative;
+   position: relative;
     max-width: 300px;
     height: auto !important;
     border-radius: 35px !important;
@@ -179,8 +190,8 @@ section
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     transition: .5s;
     overflow: hidden;
-    /*opacity: 0;
-    animation: ani2 10s ease-out forwards;*/
+    
+    animation: ani2 5s ease-out forwards;
     
 }
 
@@ -210,7 +221,7 @@ section
 }
 
 /* MANTER OS ELEMENTOS DO CARD COM OP 0 */
-
+.container-fluid,
 .tittle .fa,
 .tittle h2,
 .tittle h3,
@@ -220,13 +231,6 @@ section
 {
     opacity: 0;
 }
-
-/*.tittle img
-{
-    width: 80px;
-    height: 80px;
-    animation: ani2 0.75s ease-out 4s forwards;
-}*/
 
 .tittle .fa
 {
@@ -290,8 +294,6 @@ section
     font-size: 20px;
     margin-left: 120px;
     animation: ani2 5s ease-out forwards;
-    
-    
 }
 
 .phrase h4 i

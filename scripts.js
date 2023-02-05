@@ -6,17 +6,18 @@ const mes = date.toLocaleString('default', {month: 'long' }); // NOME MES
 
 const dia = String(date.getDate()).padStart(2, '0') // 1 -> 01
 
-const dianome = String(date.getDay()); // DIA EM NUMERO DA SEMANA
+const dianumero = String(date.getDay()); // DIA EM NUMERO DA SEMANA
+console.log(dianumero);
 
-const diasemana = new Array(6); // ARRAY PARA ENCONTRAR O NOME DO DIA DA SEMANA
+const diasemana = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sabado']; // ARRAY PARA ENCONTRAR O NOME DO DIA DA SEMANA
 
-diasemana[1]='Segunda-Feira';
-diasemana[2]='Terça-Feira';
-diasemana[3]='Quarta-Feira';
-diasemana[4]='Quinta-Feira';
-diasemana[5]='Sexta-Feira';
-diasemana[6]='Sabado';
-diasemana[7]='Domingo';
+/*diasemana[0]='Segunda-Feira';
+diasemana[1]='Terça-Feira';
+diasemana[2]='Quarta-Feira';
+diasemana[3]='Quinta-Feira';
+diasemana[4]='Sexta-Feira';
+diasemana[5]='Sabado';
+diasemana[6]='Domingo';*/
 
 // VERIFICA A HORA E RETORNA SAUDAÇÕES
 
@@ -71,7 +72,7 @@ btn.addEventListener("click", function(e){
       console.log(data)
 
     let icone = data.current.condition.text; // RECEBE O VALOR DE COMO ESTA O CLIMA
-    let diaatual = (diasemana[dianome]); // RECEBE O VALOR DO ARRAY COM O DIA DA SEMANA EM NOME
+    let diaatual = (diasemana[dianumero]); // RECEBE O VALOR DO ARRAY COM O DIA DA SEMANA EM NOME
     let temp = data.current.temp_c; // TEMP ATUAL DO DIA ATUAL
     let temparrend = Math.round(temp) // ARREDONDA O NUMERO
 
@@ -195,21 +196,9 @@ btn.addEventListener("click", function(e){
 
     //SOMA O DIA PARA RETORNAR OS DIAS DA SEMANA FORECAST
 
-    let diaforecast = (dianome)
-    let diaforecastnome
-
-      diaforecast++
-      diaforecastnome = (diasemana[diaforecast]);
-      document.getElementById('diawrite2').innerHTML = diaforecastnome;
-
-      diaforecast = diaforecast + 1
-      diaforecastnome = (diasemana[diaforecast]);
-      document.getElementById('diawrite3').innerHTML = diaforecastnome;
-
-      diaforecast = diaforecast + 1
-      diaforecastnome = (diasemana[diaforecast]);
-      document.getElementById('diawrite4').innerHTML = diaforecastnome;
-      console.log(diasemana[diaforecast]);
+    const dianomecont = (diasemana[dianumero]);
+    console.log(dianomecont)
+      
 
     // VERIFICA COMO ESTA O CLIMA FORECAST E RETORNA O ICONE CORRETO
     let iconeforecast = data.forecast.forecastday

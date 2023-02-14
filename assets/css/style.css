@@ -30,7 +30,7 @@ body
 {
     0%, 100%
     {
-        background: url(images/morning.jpg);
+        background: url(../images/morning.jpg);
         background-size: cover;
         background-position: center;
         min-width: auto;
@@ -38,7 +38,7 @@ body
     }
     25%
     {
-        background: url(images/daytime.jpg);
+        background: url(../images/daytime.jpg);
         background-size: cover;
         background-position: center;
         min-width: auto;
@@ -46,7 +46,7 @@ body
     }
     50%
     {
-        background: url(images/sunset.jpg);
+        background: url(../images/sunset.jpg);
         background-size: cover;
         background-position: center;
         min-width: auto;
@@ -55,7 +55,7 @@ body
     }
     75%
     {
-        background: url(images/night.jpg);
+        background: url(../images/night.jpg);
         background-size: cover;
         background-position: center;
         min-width: auto;
